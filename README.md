@@ -1,32 +1,37 @@
+
 # TaskFlow – Real-Time Management Board
 
-TaskFlow is a responsive task management board for creating, organizing, tracking, and completing tasks.
+TaskFlow is a responsive web-based task management application designed to help users create, organize, track, and complete tasks through a simple workflow-based dashboard.
 
-## Features
-- Add and manage tasks
-- To Do, In Progress, and Completed workflow
-- Priority levels
-- Assignee tracking
-- Task statistics
-- Browser localStorage persistence
-- Responsive design
+## 🚀 Live Demo
 
-## Technologies
+[View TaskFlow Live](https://shreyakhatake0-a11y.github.io/TaskFlow-Real-Time-Management-Board/)
+
+## 📌 Features
+
+- Create and manage tasks
+- Organize tasks into To Do, In Progress, and Completed
+- Set task priority levels
+- Assign tasks to users
+- Track total and completed tasks
+- Update task status using workflow actions
+- Delete and reopen tasks
+- Store task data using browser LocalStorage
+- Responsive and user-friendly interface
+
+## 🛠️ Technologies Used
+
 - HTML5
 - CSS3
 - JavaScript
 - LocalStorage API
 
-## How to Run
-1. Download or clone this repository.
-2. Open `index.html` in a web browser.
-3. Click **Add Task** to create tasks.
-4. Move tasks through the workflow using the action buttons.
+## 📂 Project Structure
 
-## Project Structure
-- `index.html` – application structure
-- `style.css` – responsive user interface
-- `script.js` – task management logic
-
-## Live Demo
-TaskFlow is deployed using GitHub Pages.
+```text
+TaskFlow-Real-Time-Management-Board/
+│
+├── index.html
+├── style.css
+├── script.js
+└── README.md

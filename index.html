@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskFlow - Real-Time Management Board</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <h1>TaskFlow</h1>
+      <p>Real-Time Management Board</p>
+    </div>
+    <button id="addTaskBtn" class="primary">+ Add Task</button>
+  </header>
+
+  <main class="container">
+    <section class="stats">
+      <div class="stat"><span>Total Tasks</span><strong id="totalCount">0</strong></div>
+      <div class="stat"><span>To Do</span><strong id="todoCount">0</strong></div>
+      <div class="stat"><span>In Progress</span><strong id="progressCount">0</strong></div>
+      <div class="stat"><span>Completed</span><strong id="doneCount">0</strong></div>
+    </section>
+
+    <section class="board">
+      <div class="column">
+        <div class="column-head"><h2>To Do</h2><span id="todoBadge">0</span></div>
+        <div class="task-list" id="todo"></div>
+      </div>
+      <div class="column">
+        <div class="column-head"><h2>In Progress</h2><span id="progressBadge">0</span></div>
+        <div class="task-list" id="progress"></div>
+      </div>
+      <div class="column">
+        <div class="column-head"><h2>Completed</h2><span id="doneBadge">0</span></div>
+        <div class="task-list" id="done"></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal hidden" id="modal">
+    <div class="modal-card">
+      <button class="close" id="closeBtn">×</button>
+      <h2>Add New Task</h2>
+      <form id="taskForm">
+        <label>Task Title<input id="title" required maxlength="80" placeholder="e.g. Design dashboard"></label>
+        <label>Description<textarea id="description" rows="3" placeholder="Describe the task"></textarea></label>
+        <div class="row">
+          <label>Priority
+            <select id="priority"><option>High</option><option selected>Medium</option><option>Low</option></select>
+          </label>
+          <label>Assignee<input id="assignee" placeholder="Name"></label>
+        </div>
+        <button class="primary" type="submit">Create Task</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -27,3 +27,6 @@ TaskFlow is a responsive task management board for creating, organizing, trackin
 - `index.html` – application structure
 - `style.css` – responsive user interface
 - `script.js` – task management logic
+
+## Live Demo
+TaskFlow is deployed using GitHub Pages.
